@@ -1,0 +1,24 @@
+-- auipc in RISC-V
+-- rd = pc & imm
+
+-- 03/05/26 Ivy Creech
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity auipc is
+    Port (
+        pc  : in  STD_LOGIC_VECTOR(31 downto 0);  -- current PC
+        imm : in  STD_LOGIC_VECTOR(31 downto 0);  -- 20-bit U-type immediate (already shifted left 12 bits)
+        rd  : out STD_LOGIC_VECTOR(31 downto 0)   -- result
+    );
+end auipc;
+
+architecture Behavioral of auipc is
+begin
+
+    -- Compute rd = PC + immediate
+    rd <= std_logic_vector(unsigned(pc) + unsigned(imm));
+
+end Behavioral;

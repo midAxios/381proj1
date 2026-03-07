@@ -1,0 +1,35 @@
+-- lb in RISC-V
+
+-- rd = mem_data, rs1 + imm
+--	 
+
+-- 03/05/26 Ivy Creech
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity lb is
+    Port (
+        rs1      : in  STD_LOGIC_VECTOR(31 downto 0);  -- base register
+        imm      : in  STD_LOGIC_VECTOR(11 downto 0);  -- 12-bit I-type immediate
+        mem_data : in  STD_LOGIC_VECTOR(7 downto 0);   -- byte from memory
+        address  : out STD_LOGIC_VECTOR(31 downto 0);  -- calculated memory address
+        rd       : out STD_LOGIC_VECTOR(31 downto 0)   -- loaded byte (sign-extended)
+    );
+end lb;
+
+architecture Behavioral of lb is
+    signal imm_ext : STD_LOGIC_VECTOR(31 downto 0);
+begin
+
+    -- Sign-extend the 12-bit immediate
+    imm_ext <= std_logic_vector(resize(signed(imm), 32));
+
+    -- Calculate memory address
+    address <= std_logic_vector(unsigned(rs1) + unsigned(imm_ext));
+
+    -- Sign-extend loaded byte to 32 bits
+    rd <= std_logic_vector(resize(signed(mem_data), 32));
+
+end Behavioral;
