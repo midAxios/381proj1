@@ -1,0 +1,137 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity alu32 is
+    port(
+        iA       : in  std_logic_vector(31 downto 0);
+        iB       : in  std_logic_vector(31 downto 0);
+        iShamt   : in  std_logic_vector(4 downto 0);
+        iALUCtrl : in  std_logic_vector(3 downto 0);
+        
+        o_F      : out std_logic_vector(31 downto 0);
+        oZero    : out std_logic
+    );
+end alu32;
+
+architecture structural of alu32 is
+
+
+-- COMPONENT DECLARATIONS
+
+component addsub_N
+  generic(N : integer := 32);
+  port(
+    iA       : in  std_logic_vector(N-1 downto 0);
+    iB       : in  std_logic_vector(N-1 downto 0);
+    nAdd_Sub : in  std_logic;
+    oResult  : out std_logic_vector(N-1 downto 0);
+    oCout    : out std_logic
+  );
+end component;
+
+component sll32
+    port(iA : in std_logic_vector(31 downto 0);
+         iShamt : in std_logic_vector(4 downto 0);
+         oF : out std_logic_vector(31 downto 0));
+end component;
+
+component srl32
+    port(iA : in std_logic_vector(31 downto 0);
+         iShamt : in std_logic_vector(4 downto 0);
+         oF : out std_logic_vector(31 downto 0));
+end component;
+
+component sra32
+    port(iA : in std_logic_vector(31 downto 0);
+         iShamt : in std_logic_vector(4 downto 0);
+         oF : out std_logic_vector(31 downto 0));
+end component;
+
+component mux2t1_N
+  generic(N : integer := 32);
+  port(
+    i_S  : in std_logic;
+    i_D0 : in std_logic_vector(N-1 downto 0);
+    i_D1 : in std_logic_vector(N-1 downto 0);
+    o_O  : out std_logic_vector(N-1 downto 0)
+  );
+end component;
+
+
+-- INTERNAL SIGNALS
+
+signal s_addsub : std_logic_vector(31 downto 0);
+signal s_and    : std_logic_vector(31 downto 0);
+signal s_or     : std_logic_vector(31 downto 0);
+signal s_xor    : std_logic_vector(31 downto 0);
+signal s_nor    : std_logic_vector(31 downto 0);
+signal s_slt    : std_logic_vector(31 downto 0);
+
+signal s_sll    : std_logic_vector(31 downto 0);
+signal s_srl    : std_logic_vector(31 downto 0);
+signal s_sra    : std_logic_vector(31 downto 0);
+
+signal s_result : std_logic_vector(31 downto 0);
+signal s_cout   : std_logic;
+
+
+-- ARITHMETIC OPERATIONS
+
+ADD_SUB: addsub_N
+    port map(
+        iA => iA,
+        iB => iB,
+        nAdd_Sub => iALUCtrl(1), -- 0=add, 1=sub
+        oResult => s_addsub,
+        oCout => s_cout
+    );
+
+
+-- LOGIC OPERATIONS
+
+s_and <= iA and iB;
+s_or  <= iA or iB;
+s_xor <= iA xor iB;
+s_nor <= not(iA or iB);
+
+
+-- SLT (Set Less Than)
+
+s_slt <= (31 downto 1 => '0') & s_addsub(31); -- use MSB of subtraction
+
+
+-- SHIFT OPERATIONS
+
+SLL: sll32 port map(iA => iA, iShamt => iShamt, oF => s_sll);
+SRL: srl32 port map(iA => iA, iShamt => iShamt, oF => s_srl);
+SRA: sra32 port map(iA => iA, iShamt => iShamt, oF => s_sra);
+
+
+-- ALU RESULT SELECTION
+-- (Based on 4-bit ALU control)
+
+
+process(iALUCtrl, s_addsub, s_and, s_or, s_xor, s_nor, s_slt, s_sll, s_srl, s_sra)
+begin
+    case iALUCtrl is
+        when "0000" => s_result <= s_and;
+        when "0001" => s_result <= s_or;
+        when "0010" => s_result <= s_addsub; -- add
+        when "0011" => s_result <= s_xor;
+        when "0100" => s_result <= s_nor;
+        when "0110" => s_result <= s_addsub; -- sub
+        when "0111" => s_result <= s_slt;
+        when "1000" => s_result <= s_sll;
+        when "1001" => s_result <= s_srl;
+        when "1010" => s_result <= s_sra;
+        when others => s_result <= (others => '0');
+    end case;
+end process;
+
+
+-- OUTPUTS
+
+oF <= s_result;
+oZero <= '1' when s_result = x"00000000" else '0';
+
+end structural;
