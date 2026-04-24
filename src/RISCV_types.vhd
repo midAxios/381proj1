@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 package RISCV_types is
+
   constant DATA_WIDTH : integer := 32;
   constant ADDR_WIDTH : integer := 10;
 
@@ -16,16 +17,18 @@ package RISCV_types is
   constant ALU_SLT  : std_logic_vector(3 downto 0) := "1000";
   constant ALU_SLTU : std_logic_vector(3 downto 0) := "1001";
   constant ALU_PASS : std_logic_vector(3 downto 0) := "1010";
+  constant ALU_NOR  : std_logic_vector(3 downto 0) := "1011";
 
-  constant WB_ALU  : std_logic_vector(1 downto 0) := "00";
-  constant WB_MEM  : std_logic_vector(1 downto 0) := "01";
-  constant WB_PC4  : std_logic_vector(1 downto 0) := "10";
+  constant WB_ALU : std_logic_vector(1 downto 0) := "00";
+  constant WB_MEM : std_logic_vector(1 downto 0) := "01";
+  constant WB_PC4 : std_logic_vector(1 downto 0) := "10";
 
   constant IMM_I : std_logic_vector(2 downto 0) := "000";
   constant IMM_S : std_logic_vector(2 downto 0) := "001";
   constant IMM_B : std_logic_vector(2 downto 0) := "010";
   constant IMM_U : std_logic_vector(2 downto 0) := "011";
   constant IMM_J : std_logic_vector(2 downto 0) := "100";
+
 end package RISCV_types;
 
 package body RISCV_types is
