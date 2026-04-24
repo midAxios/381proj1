@@ -1,0 +1,119 @@
+{/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/alu32.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/alu32.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RISCV_types
+-- Compiling entity alu32
+-- Compiling architecture dataflow of alu32
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/pc_reg.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/pc_reg.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity pc_reg
+-- Compiling architecture rtl of pc_reg
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_types.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_types.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package RISCV_types
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/imm_gen.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/imm_gen.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RISCV_types
+-- Compiling entity imm_gen
+-- Compiling architecture dataflow of imm_gen
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/reg_file.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/reg_file.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity reg_file
+-- Compiling architecture rtl of reg_file
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd} {2 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package RISCV_types
+** Warning: /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd(8): (vcom-1615) Existing entity 'RISCV_Processor' at /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd(25) will be overwritten.
+-- Compiling entity RISCV_Processor
+** Warning: /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd(19): (vcom-1615) Existing architecture 'RISCV_Processor(structure)' at /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd(37) will be overwritten.
+-- Compiling architecture structure of RISCV_Processor
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/mem.vhd} {2 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/mem.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+** Warning: /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/mem.vhd(5): (vcom-1615) Existing entity 'mem' at /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd(8) will be overwritten.
+-- Compiling entity mem
+** Warning: /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/mem.vhd(17): (vcom-1615) Existing architecture 'mem(rtl)' at /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd(27) will be overwritten.
+-- Compiling architecture rtl of mem
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/load_unit.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/load_unit.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity load_unit
+-- Compiling architecture rtl of load_unit
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/control_unit.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/control_unit.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package RISCV_types
+-- Compiling entity control_unit
+-- Compiling architecture rtl of control_unit
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd} {2 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package RISCV_types
+** Warning: /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd(25): (vcom-1615) Existing entity 'RISCV_Processor' at /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd(8) will be overwritten.
+-- Compiling entity RISCV_Processor
+** Warning: /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd(37): (vcom-1615) Existing architecture 'RISCV_Processor(structure)' at /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd(19) will be overwritten.
+-- Compiling architecture structure of RISCV_Processor
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd} {2 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+** Warning: /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd(8): (vcom-1615) Existing entity 'mem' at /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/mem.vhd(5) will be overwritten.
+-- Compiling entity mem
+** Warning: /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd(27): (vcom-1615) Existing architecture 'mem(rtl)' at /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/mem.vhd(17) will be overwritten.
+-- Compiling architecture rtl of mem
+
+} {} {}} {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/branch_unit.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/branch_unit.vhd}
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity branch_unit
+-- Compiling architecture rtl of branch_unit
+
+} {} {}}

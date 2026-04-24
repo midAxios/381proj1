@@ -1,0 +1,459 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2025.1_2 2025.04, Apr  7 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj
+T_opt
+!s110 1777042192
+VWBXzndm_iPEU`jDT`?`Rd1
+04 15 9 work riscv_processor structure 1
+=1-000ae431a4f1-69eb830f-b2b6c-34dd
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2025.1_2;82
+Ealu32
+Z1 w1777037809
+Z2 DPx4 work 11 riscv_types 0 22 Ce>E`eURf^bHU46cTVFX[0
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 17
+Z6 d/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/questa_project
+Z7 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/alu32.vhd
+Z8 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/alu32.vhd
+l0
+L8 1
+VCBJHI45GJI4njDzL>L6j71
+!s100 4nVXfL2N3doR?<Dek^zg31
+Z9 OL;C;2025.1_2;82
+32
+Z10 !s110 1777042175
+!i10b 1
+Z11 !s108 1777042175.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/alu32.vhd|
+Z13 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/alu32.vhd|
+!i113 0
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1 CvgOpt 0
+Adataflow
+R2
+R3
+R4
+R5
+DEx4 work 5 alu32 0 22 CBJHI45GJI4njDzL>L6j71
+!i122 17
+l50
+L19 144
+Vz?G5_H9ie2P5:]jjHLCk63
+!s100 R^n;n2KzMYUZC]BI^3D]a1
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Ebranch_unit
+Z16 w1777010393
+R3
+R4
+R5
+!i122 14
+R6
+Z17 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/branch_unit.vhd
+Z18 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/branch_unit.vhd
+l0
+L5 1
+VbUhLcJ;><OTzUlh@0lP6o1
+!s100 F:eE30DSDOb?7bRjVMCg=1
+R9
+32
+R10
+!i10b 1
+R11
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/branch_unit.vhd|
+Z20 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/branch_unit.vhd|
+!i113 0
+R14
+R15
+Artl
+R3
+R4
+R5
+DEx4 work 11 branch_unit 0 22 bUhLcJ;><OTzUlh@0lP6o1
+!i122 14
+l14
+L13 35
+VC[dVj83VE3:FnN:GOKhBF0
+!s100 D;6`fg`?N50NHIPdZ;U^Q0
+R9
+32
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 0
+R14
+R15
+Econtrol_unit
+R16
+R2
+R4
+R5
+!i122 10
+R6
+Z21 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/control_unit.vhd
+Z22 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/control_unit.vhd
+l0
+L7 1
+VSQSR[iEY^;^EhlgmG?<580
+!s100 Nf[[ZBGLXN7bNXh9PHko70
+R9
+32
+Z23 !s110 1777042174
+!i10b 1
+Z24 !s108 1777042174.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/control_unit.vhd|
+Z26 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/control_unit.vhd|
+!i113 0
+R14
+R15
+Artl
+R2
+R4
+R5
+DEx4 work 12 control_unit 0 22 SQSR[iEY^;^EhlgmG?<580
+!i122 10
+l26
+L25 117
+VfGL:XQ^@>QgA4U2n90H``3
+!s100 H^OOBze[Cbf50GK319m>Q2
+R9
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R14
+R15
+Eimm_gen
+R16
+R2
+R3
+R4
+R5
+!i122 15
+R6
+Z27 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/imm_gen.vhd
+Z28 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/imm_gen.vhd
+l0
+L8 1
+Vj4QG^ehIR8V=RknBIC:MJ2
+!s100 cBhVBnJS7KkY<R8;cYZ901
+R9
+32
+R10
+!i10b 1
+R11
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/imm_gen.vhd|
+Z30 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/imm_gen.vhd|
+!i113 0
+R14
+R15
+Adataflow
+R2
+R3
+R4
+R5
+DEx4 work 7 imm_gen 0 22 j4QG^ehIR8V=RknBIC:MJ2
+!i122 15
+l21
+L15 20
+V`O]8iNV1@YakP6AJEb`HB1
+!s100 @^cSXLa]Oz9m7A43[Qn?41
+R9
+32
+R10
+!i10b 1
+R11
+R29
+R30
+!i113 0
+R14
+R15
+Eload_unit
+R16
+R3
+R4
+R5
+!i122 18
+R6
+Z31 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/load_unit.vhd
+Z32 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/load_unit.vhd
+l0
+L5 1
+V9lalaLk3Mzd@m]9Cc0TWX2
+!s100 e]TTzldUkXN[8X:JnS>;B2
+R9
+32
+R10
+!i10b 1
+R11
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/load_unit.vhd|
+Z34 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/load_unit.vhd|
+!i113 0
+R14
+R15
+Artl
+R3
+R4
+R5
+DEx4 work 9 load_unit 0 22 9lalaLk3Mzd@m]9Cc0TWX2
+!i122 18
+l14
+L13 29
+V>_OG2gHJT4zYj`k:f5ib;2
+!s100 Fe]bOHISXeB7<k2`76N[T3
+R9
+32
+R10
+!i10b 1
+R11
+R33
+R34
+!i113 0
+R14
+R15
+Emem
+Z35 w1777031538
+R3
+R4
+R5
+!i122 19
+R6
+Z36 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd
+Z37 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd
+l0
+L8 1
+VCIA?Dj3Mm_l0m@`CClQMl0
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R9
+32
+R10
+!i10b 1
+R11
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd|
+Z39 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/TopLevel/mem.vhd|
+!i113 0
+R14
+R15
+Artl
+R3
+R4
+R5
+DEx4 work 3 mem 0 22 CIA?Dj3Mm_l0m@`CClQMl0
+!i122 19
+l37
+L27 24
+VH8m[_WC46V;E>EkG3<H:a0
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R9
+32
+R10
+!i10b 1
+R11
+R38
+R39
+!i113 0
+R14
+R15
+Epc_reg
+R16
+R4
+R5
+!i122 12
+R6
+Z40 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/pc_reg.vhd
+Z41 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/pc_reg.vhd
+l0
+L4 1
+V9Y]G9YzZIWeDzo_OJ_bli3
+!s100 CV^aj?R@gleOWiQ1OeWWb3
+R9
+32
+R23
+!i10b 1
+R24
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/pc_reg.vhd|
+Z43 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/pc_reg.vhd|
+!i113 0
+R14
+R15
+Artl
+R4
+R5
+DEx4 work 6 pc_reg 0 22 9Y]G9YzZIWeDzo_OJ_bli3
+!i122 12
+l16
+L13 17
+VNT8SW=nE[E:9i2XiYaLNh0
+!s100 8RD>_MhZkWN]<P8IaT1Y_2
+R9
+32
+R23
+!i10b 1
+R24
+R42
+R43
+!i113 0
+R14
+R15
+Ereg_file
+R16
+R3
+R4
+R5
+!i122 13
+R6
+Z44 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/reg_file.vhd
+Z45 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/reg_file.vhd
+l0
+L5 1
+VoKBh3R1IUgbP:]OL]M1O40
+!s100 KCfFIS8li0WLkKHT6bdEb2
+R9
+32
+R23
+!i10b 1
+R24
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/reg_file.vhd|
+Z47 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/reg_file.vhd|
+!i113 0
+R14
+R15
+Artl
+R3
+R4
+R5
+DEx4 work 8 reg_file 0 22 oKBh3R1IUgbP:]OL]M1O40
+!i122 13
+l21
+L18 21
+VmoFFg@I:RY0g=f]^_3[eM3
+!s100 SgUC5UnQ18XhSMA8<?If41
+R9
+32
+R23
+!i10b 1
+R24
+R46
+R47
+!i113 0
+R14
+R15
+Eriscv_processor
+R16
+R2
+R3
+R4
+R5
+!i122 21
+R6
+Z48 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd
+Z49 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd
+l0
+L8 1
+V=P282GSz?7DQ9OBoKQihe2
+!s100 V1^od1CoM[eGM`ER7_QOU2
+R9
+32
+R10
+!i10b 1
+R11
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd|
+Z51 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_Processor.vhd|
+!i113 0
+R14
+R15
+Astructure
+R2
+R3
+R4
+R5
+DEx4 work 15 riscv_processor 0 22 =P282GSz?7DQ9OBoKQihe2
+!i122 21
+l142
+L19 249
+VYg[ZNR_o<REHWE1:^j6>k1
+!s100 HLPh7k;4dNmF7>J1EOJ0N0
+R9
+32
+R10
+!i10b 1
+R11
+R50
+R51
+!i113 0
+R14
+R15
+Priscv_types
+R4
+R5
+!i122 16
+R1
+R6
+Z52 8/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_types.vhd
+Z53 F/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_types.vhd
+l0
+L4 29
+VCe>E`eURf^bHU46cTVFX[0
+!s100 DZ[[;JWm:HV6fcC0B]z1h1
+R9
+32
+R10
+!i10b 1
+R11
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_types.vhd|
+Z55 !s107 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src/RISCV_types.vhd|
+!i113 0
+R14
+R15
+Bbody
+R2
+R4
+R5
+!i122 16
+l0
+L34 2
+V5b5Rm8_TGC2HmL]=C25;K3
+!s100 JT7XJV1QKRO^oa@nVXH:62
+R9
+32
+R10
+!i10b 1
+R11
+R54
+R55
+!i113 0
+R14
+R15

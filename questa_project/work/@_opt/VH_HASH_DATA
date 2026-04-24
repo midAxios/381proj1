@@ -1,0 +1,61 @@
+[N
+8
+1
+81 /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/questa_project/work
+5
+10 ADDR_WIDTH
+8
+1 N
+3
+3 rtl
+7
+9 structure
+6
+15 riscv_processor
+4
+10 DATA_WIDTH
+2
+3 mem
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+6
+7
+1
+8
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+5
+1
+0
+10
+0
+0 0
+0
+0
+]

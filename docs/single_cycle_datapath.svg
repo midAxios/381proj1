@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#111111"/>
+    </marker>
+    <marker id="arrowred" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#b00000"/>
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 3; }
+      .small { fill: #ffffff; stroke: #111111; stroke-width: 3; }
+      .wire { fill: none; stroke: #111111; stroke-width: 4; marker-end: url(#arrow); }
+      .ctrl { fill: none; stroke: #b00000; stroke-width: 3; marker-end: url(#arrowred); }
+      .text { font-family: Arial, Helvetica, sans-serif; font-size: 26px; fill: #111111; text-anchor: middle; dominant-baseline: middle; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #111111; text-anchor: middle; }
+      .red { font-family: Arial, Helvetica, sans-serif; font-size: 22px; fill: #b00000; text-anchor: middle; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: bold; fill: #111111; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <text class="title" x="800" y="38">Project 1 Single-Cycle RISC-V Processor Datapath</text>
+  <rect x="40" y="70" width="1520" height="780" fill="none" stroke="#111111" stroke-width="5"/>
+
+  <rect class="small" x="90" y="390" width="70" height="150"/>
+  <text class="text" x="125" y="465">PC</text>
+
+  <rect class="box" x="230" y="330" width="210" height="220"/>
+  <text class="text" x="335" y="410">Instruction</text>
+  <text class="text" x="335" y="445">Memory</text>
+  <text class="label" x="335" y="508">mem.vhd</text>
+
+  <ellipse cx="600" cy="190" rx="100" ry="75" fill="#ffffff" stroke="#b00000" stroke-width="3"/>
+  <text class="red" x="600" y="178">Control</text>
+  <text class="red" x="600" y="210">Unit</text>
+
+  <rect class="box" x="570" y="330" width="270" height="250"/>
+  <text class="text" x="705" y="390">Register</text>
+  <text class="text" x="705" y="425">File</text>
+  <text class="label" x="705" y="535">reg_file.vhd</text>
+
+  <ellipse cx="720" cy="710" rx="95" ry="70" class="box"/>
+  <text class="text" x="720" y="695">Immediate</text>
+  <text class="text" x="720" y="730">Generator</text>
+
+  <polygon class="box" points="960,360 1075,425 1075,545 960,610"/>
+  <text class="text" x="1020" y="485">ALU</text>
+  <text class="label" x="1015" y="568">alu32.vhd</text>
+
+  <ellipse cx="1030" cy="230" rx="95" ry="55" class="box"/>
+  <text class="text" x="1030" y="218">Branch</text>
+  <text class="text" x="1030" y="250">Unit</text>
+
+  <rect class="box" x="1210" y="330" width="230" height="220"/>
+  <text class="text" x="1325" y="405">Data</text>
+  <text class="text" x="1325" y="440">Memory</text>
+  <text class="label" x="1325" y="508">mem.vhd</text>
+
+  <rect class="box" x="1225" y="650" width="200" height="115"/>
+  <text class="text" x="1325" y="695">Load</text>
+  <text class="text" x="1325" y="730">Formatter</text>
+
+  <polygon class="small" points="910,430 945,450 945,520 910,540"/>
+  <text class="label" x="930" y="440">0</text>
+  <text class="label" x="930" y="530">1</text>
+
+  <polygon class="small" points="1480,435 1515,455 1515,545 1480,565"/>
+  <text class="label" x="1500" y="450">0</text>
+  <text class="label" x="1500" y="500">1</text>
+  <text class="label" x="1500" y="550">2</text>
+
+  <polygon class="small" points="1290,95 1325,115 1325,205 1290,225"/>
+  <text class="label" x="1310" y="112">0</text>
+  <text class="label" x="1310" y="158">1</text>
+  <text class="label" x="1310" y="205">2</text>
+
+  <rect class="small" x="360" y="125" width="115" height="80"/>
+  <text class="text" x="417" y="165">PC+4</text>
+
+  <rect class="small" x="845" y="125" width="150" height="80"/>
+  <text class="text" x="920" y="165">PC+Imm</text>
+
+  <rect class="small" x="1055" y="125" width="155" height="80"/>
+  <text class="text" x="1132" y="165">rs1+Imm</text>
+
+  <path class="wire" d="M160 465 L230 465"/>
+  <path class="wire" d="M440 430 L570 430"/>
+  <path class="wire" d="M440 455 L570 495"/>
+  <path class="wire" d="M440 500 L625 680"/>
+  <path class="wire" d="M840 410 L910 455"/>
+  <path class="wire" d="M840 500 L910 520"/>
+  <path class="wire" d="M945 485 L960 485"/>
+  <path class="wire" d="M1075 485 L1210 405"/>
+  <path class="wire" d="M840 530 L1210 495"/>
+  <path class="wire" d="M1440 455 L1480 480"/>
+  <path class="wire" d="M1425 710 L1480 520"/>
+  <path class="wire" d="M1515 500 L1550 500 L1550 810 L520 810 L520 548 L570 548"/>
+  <path class="wire" d="M125 390 L125 165 L360 165"/>
+  <path class="wire" d="M475 165 L1290 125"/>
+  <path class="wire" d="M815 710 L920 205"/>
+  <path class="wire" d="M995 165 L1290 160"/>
+  <path class="wire" d="M1210 165 L1290 205"/>
+  <path class="wire" d="M1325 160 L1515 160 L1515 90 L70 90 L70 465 L90 465"/>
+  <path class="wire" d="M840 390 L955 245"/>
+  <path class="wire" d="M840 470 L955 245"/>
+  <path class="wire" d="M1125 230 L1285 160"/>
+  <path class="wire" d="M1075 485 L1225 710"/>
+
+  <path class="ctrl" d="M600 265 L600 330"/>
+  <path class="ctrl" d="M680 190 L910 435"/>
+  <path class="ctrl" d="M700 175 L960 365"/>
+  <path class="ctrl" d="M700 205 L1210 330"/>
+  <path class="ctrl" d="M700 220 L1480 450"/>
+  <path class="ctrl" d="M690 235 L1290 95"/>
+  <path class="ctrl" d="M520 190 L440 395"/>
+
+  <text class="red" x="595" y="315">RegWrite</text>
+  <text class="red" x="875" y="425">ALUSrc</text>
+  <text class="red" x="960" y="345">ALUCtrl</text>
+  <text class="red" x="1180" y="310">MemWrite</text>
+  <text class="red" x="1440" y="430">MemToReg</text>
+  <text class="red" x="1270" y="82">PCSrc</text>
+  <text class="red" x="475" y="380">ImmType</text>
+
+  <text class="label" x="505" y="418">rs1</text>
+  <text class="label" x="505" y="495">rs2</text>
+  <text class="label" x="510" y="595">rd</text>
+  <text class="label" x="870" y="395">Read Data 1</text>
+  <text class="label" x="870" y="528">Read Data 2</text>
+  <text class="label" x="1160" y="475">Address</text>
+  <text class="label" x="1165" y="535">Write Data</text>
+</svg>

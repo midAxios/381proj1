@@ -1,0 +1,152 @@
+# //  Questa Sim-64
+# //  Version 2025.1_2 linux_x86_64 Apr  7 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+ls
+# Proj1_control_signals.csv
+# README
+# docs
+# qpCreatorV2.do
+# riscv
+# src
+# test
+# transcript
+pwd
+# /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj
+qpCreatorV2.do
+# invalid command name "qpCreatorV2.do"
+qpCreatorV2.dodo 
+# invalid command name "qpCreatorV2.dodo"
+do qpCreatorV2.do
+# proj1
+# /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/src
+# /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/questa_project
+# 12
+# /home/erictow/Desktop/3810/A0 Projects/cpre3810-toolflow/proj/questa_project/proj1.mpf
+# Loading project proj1
+# 
+#     work
+#     questa_project
+#     simulation
+#     incremental_db
+#     output_files
+#     db
+#     .git
+#     __pycache__
+# 
+# 
+#     .vhd
+# 
+# Compile of control_unit.vhd failed with 3 errors.
+# Compile of mem.vhd was successful.
+# Compile of pc_reg.vhd was successful.
+# Compile of reg_file.vhd was successful.
+# Compile of branch_unit.vhd was successful.
+# Compile of imm_gen.vhd failed with 3 errors.
+# Compile of RISCV_types.vhd was successful.
+# Compile of alu32.vhd was successful.
+# Compile of load_unit.vhd was successful.
+# Compile of mem.vhd was successful with warnings.
+# Compile of RISCV_Processor.vhd was successful.
+# Compile of RISCV_Processor.vhd was successful with warnings.
+# 12 compiles, 2 failed with 6 errors.
+# Compile of control_unit.vhd was successful.
+# Compile of mem.vhd was successful with warnings.
+# Compile of pc_reg.vhd was successful.
+# Compile of reg_file.vhd was successful.
+# Compile of branch_unit.vhd was successful.
+# Compile of imm_gen.vhd was successful.
+# Compile of RISCV_types.vhd was successful.
+# Compile of alu32.vhd was successful.
+# Compile of load_unit.vhd was successful.
+# Compile of mem.vhd was successful with warnings.
+# Compile of RISCV_Processor.vhd was successful with warnings.
+# Compile of RISCV_Processor.vhd was successful with warnings.
+# 12 compiles, 0 failed with no errors.
+vsim work.riscv_processor -voptargs=+acc
+# vsim work.riscv_processor -voptargs="+acc" 
+# Start time: 09:49:51 on Apr 24,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_types(body)
+# Loading work.riscv_processor(structure)#1
+# Loading work.pc_reg(rtl)#1
+# Loading work.mem(rtl)#1
+# Loading work.control_unit(rtl)#1
+# Loading work.reg_file(rtl)#1
+# Loading work.imm_gen(dataflow)#1
+# Loading work.alu32(dataflow)#1
+# Loading work.branch_unit(rtl)#1
+# Loading work.load_unit(rtl)#1
+add wave -position insertpoint  \
+sim:/riscv_processor/N \
+sim:/riscv_processor/iCLK \
+sim:/riscv_processor/iRST \
+sim:/riscv_processor/iInstLd \
+sim:/riscv_processor/iInstAddr \
+sim:/riscv_processor/iInstExt \
+sim:/riscv_processor/oALUOut \
+sim:/riscv_processor/s_DMemWr \
+sim:/riscv_processor/s_DMemAddr \
+sim:/riscv_processor/s_DMemData \
+sim:/riscv_processor/s_DMemOut \
+sim:/riscv_processor/s_RegWr \
+sim:/riscv_processor/s_RegWrAddr \
+sim:/riscv_processor/s_RegWrData \
+sim:/riscv_processor/s_IMemAddr \
+sim:/riscv_processor/s_PC \
+sim:/riscv_processor/s_Inst \
+sim:/riscv_processor/s_Halt \
+sim:/riscv_processor/s_Ovfl \
+sim:/riscv_processor/s_PCPlus4 \
+sim:/riscv_processor/s_NextPC \
+sim:/riscv_processor/s_Imm \
+sim:/riscv_processor/s_ReadData1 \
+sim:/riscv_processor/s_ReadData2 \
+sim:/riscv_processor/s_ALUInA \
+sim:/riscv_processor/s_ALUInB \
+sim:/riscv_processor/s_ALUOut \
+sim:/riscv_processor/s_LoadData \
+sim:/riscv_processor/s_BranchTaken \
+sim:/riscv_processor/s_ALUZero \
+sim:/riscv_processor/s_BranchTarget \
+sim:/riscv_processor/s_JalrTarget \
+sim:/riscv_processor/s_ALUSrc \
+sim:/riscv_processor/s_ALUCtrl \
+sim:/riscv_processor/s_ImmType \
+sim:/riscv_processor/s_WBSel \
+sim:/riscv_processor/s_Branch \
+sim:/riscv_processor/s_Jump \
+sim:/riscv_processor/s_Jalr
+run 5000
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /riscv_processor/ALU
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /riscv_processor/ALU
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /riscv_processor/RegFile
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /riscv_processor/RegFile
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /riscv_processor/DMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /riscv_processor/IMem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 4  Instance: /riscv_processor/DMem
+# End time: 09:50:29 on Apr 24,2026, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 25
