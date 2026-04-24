@@ -44,8 +44,7 @@ architecture dataflow of alu32 is
   signal s_sll : std_logic_vector(31 downto 0);
 
   signal s_left_input : std_logic_vector(31 downto 0);
-
-  signal s_result : std_logic_vector(31 downto 0);
+  signal s_result     : std_logic_vector(31 downto 0);
 
 begin
 
@@ -137,7 +136,6 @@ begin
   gen_reverse_output : for bitpos in 0 to 31 generate
     s_sll(bitpos) <= s_sll_stage(5)(31 - bitpos);
   end generate gen_reverse_output;
-
 
   with iALUCtrl select
     s_result <= s_add  when ALU_ADD,
