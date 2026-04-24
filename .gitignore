@@ -1,0 +1,29 @@
+# Questa/ModelSim generated files
+work/
+questa_project/
+transcript
+vsim.wlf
+*.wlf
+*.mpf
+*.mti
+*.log
+*.jou
+
+# Common simulation/output folders
+simulation/
+incremental_db/
+output_files/
+db/
+
+# VS Code local settings
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
